@@ -48,7 +48,6 @@ export default {
   margin-left: 20px;
 }
 .wrap-4 {
-  /* width: 100vw; */
   height: 80vh;
   display: flex;
   justify-content: space-between;

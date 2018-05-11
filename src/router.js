@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Router from 'vue-router' //安装的包名
 import HelloWorld from '@/components/HelloWorld' //导入的是页面组件
 import Home from '@/components/Home' //导入的是页面组件
-// import Top from '@/components/Top' //导入的是页面组件
 import Note from '@/components/Note' //
 import Exhibitionq from '@/components/Exhibitionq' //
 import Exhibition from '@/components/Exhibition' //
