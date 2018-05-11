@@ -38,7 +38,6 @@ export default {
 .wrap-2 {
   font-size: 30px;
   color: #4d4dff;
-  /* text-align: center; */
 }
 .wrap-3 {
   width: 90%;

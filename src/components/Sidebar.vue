@@ -1,9 +1,9 @@
 <template>
   <div class="wrap">
-    <router-link to="/Exhibition" >
+    <router-link to="/tiaozhuan" >
         <p>前端页面组成由那几部分</p>
     </router-link>
-    <router-link to="/Exhibitionq">
+    <router-link to="/tiaozhuanq">
         <p>选择器</p>
     </router-link>
   </div>

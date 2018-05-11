@@ -5,6 +5,8 @@ import Home from '@/components/Home' //导入的是页面组件
 import Note from '@/components/Note'
 import Exhibitionq from '@/components/Exhibitionq'
 import Exhibition from '@/components/Exhibition'
+import tiaozhuan from '@/components/tiaozhuan'
+import tiaozhuanq from '@/components/tiaozhuanq'
 Vue.use(Router)
 
 export default new Router({
@@ -28,6 +30,14 @@ export default new Router({
         {
             path: '/Exhibition',
             component: Exhibition
+        },
+        {
+            path: '/tiaozhuan',
+            component: tiaozhuan
+        },
+        {
+            path: '/tiaozhuanq',
+            component: tiaozhuanq
         },
     ],
     mode: 'history' //去除网页链接上面的#
