@@ -2,7 +2,9 @@
   <div>
     <div class="wrap-1">
       <img src="../assets/1.jpg" alt=""> 
-      <span class="wrap-2">Lmoxiaobei</span>
+      <router-link to="/" >
+        <span class="wrap-2">Lmoxiaobei</span>
+      </router-link>
       <span>></span>
       <span>我的博客</span>
     </div>
@@ -12,6 +14,7 @@
         </div>
         <div class="wrap-3">
           <Exhibition />
+          <!-- <Exhibitionq /> -->
         </div>
     </div>
   </div>
@@ -20,11 +23,13 @@
 <script>
 import Sidebar from './Sidebar'
 import Exhibition from './Exhibition'
+// import Exhibitionq from './Exhibitionq'
 export default {
   name: 'Note',
   components: {
     Sidebar,
     Exhibition
+    // Exhibitionq
   }
 }
 </script>
