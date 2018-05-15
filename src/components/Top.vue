@@ -24,7 +24,6 @@ export default {
 }
 .wrap span {
   font-size: 30px;
-  /* color: #fff; */
 }
 .wrap-1 {
   color: rgb(68, 142, 246);

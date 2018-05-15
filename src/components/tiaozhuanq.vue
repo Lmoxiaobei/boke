@@ -21,13 +21,11 @@
 
 <script>
 import Sidebar from './Sidebar'
-// import Exhibition from './Exhibition'
 import Exhibitionq from './Exhibitionq'
 export default {
   name: 'Note',
   components: {
     Sidebar,
-    // Exhibition
     Exhibitionq
   }
 }

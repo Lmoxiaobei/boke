@@ -7,6 +7,7 @@ import Exhibitionq from '@/components/Exhibitionq'
 import Exhibition from '@/components/Exhibition'
 import tiaozhuan from '@/components/tiaozhuan'
 import tiaozhuanq from '@/components/tiaozhuanq'
+import Ga from '@/components/Ga'
 Vue.use(Router)
 
 export default new Router({
@@ -39,6 +40,12 @@ export default new Router({
             path: '/tiaozhuanq',
             component: tiaozhuanq
         },
+
+        {
+            path: '/ga',
+            component: Ga
+        },
+
     ],
     mode: 'history' //去除网页链接上面的#
 })

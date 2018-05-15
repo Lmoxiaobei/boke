@@ -3,7 +3,7 @@
     <div class="wrap-1">
       <img src="../assets/1.jpg" alt=""> 
       <router-link to="/">
-        <span class="wrap-2">Lmoxiaobei</span>
+      <span class="wrap-2">Lmoxiaobei</span>
       </router-link>
       <span>></span>
       <span>我的博客</span>

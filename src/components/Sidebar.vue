@@ -29,7 +29,6 @@ export default {
   margin-top: 2%;
   margin-bottom: 2%;
   font-size: 18px;
-  /* text-align: center; */
 }
 a {
   color: #000;

@@ -2,9 +2,11 @@
   <div class="wrap">
     <div class="wrap-1">
       <img src="../assets/1.jpg" alt=""> 
-      <router-link to="/">
-        <span class="wrap-2">Lmoxiaobei</span>
-      </router-link>
+      <router-link to="/home">Lmoxiaobei</router-link>
+      <span v-if="showNav">
+        >
+        <router-link :to="path">{{pathName}}</router-link>
+      </span>
     </div>
     <Top />
     <Foot />
@@ -17,12 +19,25 @@ import Top from './Top'
 import Foot from './Foot'
 import Footer from './Footer'
 
+import { getPathName } from '../constants/RouteConstants'
+
 export default {
   name: 'HelloWorld',
+    computed: {
+    path() {
+      return this.$route.path
+    },
+    showNav() {
+      return this.path !== '/'
+    },
+    pathName() {
+      return getPathName(this.path)
+    }
+  },
   components: {
     Top,
     Foot,
-    Footer
+    Footer,
   }
 }
 </script>
