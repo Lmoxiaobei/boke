@@ -53,7 +53,9 @@
         <div class="wrap-11"></div>
         <div class="wrap-9 wrap-12">
           <img src="../assets/i476.png" alt="">
+           <router-link to="/Xiangce">
           <span>相册</span>
+          </router-link>
         </div>
       </div>
 

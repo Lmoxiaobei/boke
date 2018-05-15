@@ -11,6 +11,9 @@ import tiaozhuanq from '@/components/tiaozhuanq'
 import tiaozhuanw from '@/components/tiaozhuanw'
 import Ga from '@/components/Ga'
 import Jianli from '@/components/Jianli'
+import Jianliq from '@/components/Jianliq'
+import Xiangce from '@/components/Xiangce'
+
 Vue.use(Router)
 
 export default new Router({
@@ -59,6 +62,14 @@ export default new Router({
         {
             path: '/jianli',
             component: Jianli
+        },
+        {
+            path: '/Jianliq',
+            component: Jianliq
+        },
+        {
+            path: '/Xiangce',
+            component: Xiangce
         },
 
     ],
