@@ -2,11 +2,11 @@
   <div class="wrap">
     <div class="wrap-1">
       <img src="../assets/1.jpg" alt=""> 
-      <router-link to="/home">Lmoxiaobei</router-link>
-      <span v-if="showNav">
-        >
-        <router-link :to="path">{{pathName}}</router-link>
-      </span>
+    <router-link to="/">Lmoxiaobei</router-link>
+    <span v-if="showNav">
+      >
+      <router-link :to="path">{{pathName}}</router-link>
+    </span>
     </div>
     <Top />
     <Foot />

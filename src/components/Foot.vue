@@ -15,9 +15,9 @@
         <div class="wrap-10"></div>
         <div class="wrap-8">
           <img src="../assets/i394.png" alt="">
-          
+          <router-link to='/Jianli'>
           <span>我的简历</span>
-          
+          </router-link>
         </div>
         <div class="wrap-11"></div>
         <div class="wrap-9">

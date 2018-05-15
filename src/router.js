@@ -5,9 +5,12 @@ import Home from '@/components/Home' //导入的是页面组件
 import Note from '@/components/Note'
 import Exhibitionq from '@/components/Exhibitionq'
 import Exhibition from '@/components/Exhibition'
+import Exhibitionw from '@/components/Exhibitionw'
 import tiaozhuan from '@/components/tiaozhuan'
 import tiaozhuanq from '@/components/tiaozhuanq'
+import tiaozhuanw from '@/components/tiaozhuanw'
 import Ga from '@/components/Ga'
+import Jianli from '@/components/Jianli'
 Vue.use(Router)
 
 export default new Router({
@@ -29,6 +32,10 @@ export default new Router({
             component: Exhibitionq
         },
         {
+            path: '/Exhibitionw',
+            component: Exhibitionw
+        },
+        {
             path: '/Exhibition',
             component: Exhibition
         },
@@ -40,10 +47,18 @@ export default new Router({
             path: '/tiaozhuanq',
             component: tiaozhuanq
         },
+        {
+            path: '/tiaozhuanw',
+            component: tiaozhuanw
+        },
 
         {
             path: '/ga',
             component: Ga
+        },
+        {
+            path: '/jianli',
+            component: Jianli
         },
 
     ],

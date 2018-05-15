@@ -12,8 +12,8 @@
         <div class="wrap-2">
           <Sidebar />
         </div>
-        <div class="wrap-3">
-          <Exhibition />
+        <div>
+            <Exhibitionw/>
         </div>
     </div>
   </div>
@@ -21,12 +21,12 @@
 
 <script>
 import Sidebar from './Sidebar'
-import Exhibition from './Exhibition'
+import Exhibitionw from './Exhibitionw'
 export default {
   name: 'Note',
   components: {
     Sidebar,
-    Exhibition
+    Exhibitionw
   }
 }
 </script>

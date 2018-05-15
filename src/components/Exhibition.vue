@@ -7,7 +7,6 @@
       <p>1.结构层 html</p>
       <p>2.表示层 css</p>
       <p>3.行为层 javascript(js)属于弱类行语言</p>
-      <p>ECMAScript（理解为javascript的一个标准）</p>
     </div>
   </div>
 </template>

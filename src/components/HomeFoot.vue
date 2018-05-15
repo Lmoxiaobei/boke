@@ -18,6 +18,7 @@
 </template>
 
 <script>
+import { getPathName } from '../constants/RouteConstants'
 export default {
   name: 'HomeFoot'
 }
