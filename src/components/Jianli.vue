@@ -16,11 +16,20 @@
 </template>
 
 <script>
+import axios from 'axios'
 import Jianliq from './Jianliq'
 export default {
   name: 'Jianli',
-  components:{
+  components: {
     Jianliq
+  },
+  created() {
+    console.log('BlogContent created')
+    const uri =
+      'https://raw.githubusercontent.com/Lmoxiaobei/boke/master/data/posts/1.md'
+    axios.get(uri).then(res => {
+      console.log('my Post', res.data)
+    })
   }
 }
 </script>
