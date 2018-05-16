@@ -26,7 +26,7 @@ export default {
   created() {
     console.log('BlogContent created')
     const uri =
-      'https://raw.githubusercontent.com/Lmoxiaobei/boke/master/data/posts/1.md'
+      'https://raw.githubusercontent.com/happypeter/vhome/master/data/posts/1.md'
     axios.get(uri).then(res => {
       console.log('my Post', res.data)
     })

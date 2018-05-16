@@ -11,20 +11,20 @@
     <div class="wrapper">
 	  <div class="box">
 	    <div class="productq">
-	      <span class="name">T-shirt</span>
-	      <span class="description">刀剑神域,亚丝娜</span>
+	      <span class="name">刀剑神域</span>
+	      <span class="description">亚丝娜</span>
 	    </div>
 	  </div>
 	  <div class="box">
 	    <div class="productw">
-	      <span class="name">T-shirt</span>
-	      <span class="description">Fgo,阿尔托莉雅</span>
+	      <span class="name">Fate/Grand Order</span>
+	      <span class="description">阿尔托利亚·潘德拉贡</span>
 	    </div>
 	  </div>
 	  <div class="box">
 	    <div class="producte">
-	      <span class="name">T-shirt</span>
-	      <span class="description">Clannad,藤林杏</span>
+	      <span class="name">Clannad</span>
+	      <span class="description">藤林杏</span>
 	    </div>
 	  </div>
 	</div>
