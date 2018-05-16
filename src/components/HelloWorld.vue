@@ -2,8 +2,8 @@
   <div class="wrap">
     <div class="wrap-1">
       <img src="../assets/1.jpg" alt=""> 
-    <router-link to="/">Lmoxiaobei</router-link>
-    <span v-if="showNav">
+      <router-link to="/">Lmoxiaobei</router-link>
+      <span v-if="showNav">
       >
       <router-link :to="path">{{pathName}}</router-link>
     </span>
@@ -61,7 +61,7 @@ export default {
   margin-left: 2%;
 }
 .wrap a {
-  margin-left: 2%;
+  margin-left: 20px;
   color: #000;
 }
 </style>

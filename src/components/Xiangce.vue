@@ -1,12 +1,12 @@
 <template>
 <div>
-        <div class="wrap-1">
+    <div class="wrap-1">
       <img src="../assets/1.jpg" alt=""> 
       <router-link to="/">
-      <span class="wrap-2">Lmoxiaobei</span>
+      <div class="wrap-2">Lmoxiaobei</div>
       </router-link>
-      <span>></span>
-      <span>我的博客</span>
+      <div class='wrap-2'>></div>
+      <div class='wrap-2'>我的相册</div>
     </div>
     <div class="wrapper">
 	  <div class="box">
@@ -48,6 +48,9 @@
 }
 .wrap-1 span {
   margin-left: 20px;
+}
+.wrap-2{
+  margin-left:20px;
 }
 body {
   margin: 0;
@@ -141,6 +144,7 @@ h1 + p {
   opacity: 0.5;
 }
 .box:hover {
+  cursor:pointer; 
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   -webkit-transition: opacity 0.1s linear 0s, -webkit-transform 0.3s linear 0.3s,
