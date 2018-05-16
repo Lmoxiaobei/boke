@@ -12,24 +12,37 @@
     <div class="second"></div>
   </div>    
   <Jianliq />
+  <div v-html="htmlPost"></div>
 </div>  
 </template>
 
 <script>
 import axios from 'axios'
 import Jianliq from './Jianliq'
+import md from '../utils/markdownUtils'
+import { API_URL } from '../constants/ApiConstants'
 export default {
   name: 'Jianli',
+  data: () => ({
+    post: ''
+  }),
   components: {
     Jianliq
   },
   created() {
     console.log('BlogContent created')
-    const uri =
-      'https://raw.githubusercontent.com/happypeter/vhome/master/data/posts/1.md'
+    const id = this.$route.params.id
+    const uri = `${API_URL}/posts/${id}.md`
+    // const uri =
+    //   'https://raw.githubusercontent.com/Lmoxiaobei/boke/master/data/posts/1.md'
     axios.get(uri).then(res => {
       console.log('my Post', res.data)
     })
+  },
+  computed: {
+    htmlPost() {
+      return md.render(this.post)
+    }
   }
 }
 </script>
