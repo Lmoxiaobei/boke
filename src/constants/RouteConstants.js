@@ -6,4 +6,4 @@ const paths = {
     '/note': '笔记'
 }
 
-export const getPathName = path => paths[path]
+export const getPathName = rootPath => paths[rootPath]

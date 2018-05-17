@@ -1,5 +1,13 @@
 <template>
 <div>
+    <div class="wrap-1">
+      <img src="../assets/1.jpg" alt=""> 
+      <router-link to="/">
+      <span class="wrap-2">Lmoxiaobei</span>
+      </router-link>
+      <span>></span>
+      <span>我的简历</span>
+    </div>
   <div class="clock">
     <div class="top"></div>
     <div class="right"></div>
@@ -12,38 +20,16 @@
     <div class="second"></div>
   </div>    
   <Jianliq />
-  <div v-html="htmlPost"></div>
 </div>  
 </template>
 
 <script>
-import axios from 'axios'
 import Jianliq from './Jianliq'
-import md from '../utils/markdownUtils'
-import { API_URL } from '../constants/ApiConstants'
 export default {
   name: 'Jianli',
-  data: () => ({
-    post: ''
-  }),
   components: {
     Jianliq
   },
-  created() {
-    console.log('BlogContent created')
-    const id = this.$route.params.id
-    const uri = `${API_URL}/posts/${id}.md`
-    // const uri =
-    //   'https://raw.githubusercontent.com/Lmoxiaobei/boke/master/data/posts/1.md'
-    axios.get(uri).then(res => {
-      console.log('my Post', res.data)
-    })
-  },
-  computed: {
-    htmlPost() {
-      return md.render(this.post)
-    }
-  }
 }
 </script>
 
@@ -57,6 +43,23 @@ body {
   min-height: 100%;
   background: #00a88f;
 }
+.wrap-1 {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  align-items: center;
+}
+.wrap-1 img {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #0000ff;
+  border-radius: 50%;
+}
+.wrap-1 span {
+  margin-left: 20px;
+}
 .clock {
   position: relative;
   height: 200px;
@@ -69,7 +72,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 300px;
+  bottom: 270px;
   margin: auto;
 }
 .clock .top {
