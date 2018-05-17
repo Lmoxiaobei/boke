@@ -6,7 +6,7 @@
       <span class="wrap-2">Lmoxiaobei</span>
       </router-link>
       <span>></span>
-      <span>我的博客</span>
+      <span>我的笔记</span>
     </div>
     <div class="wrap-3">
       <div class="wrap-4">
