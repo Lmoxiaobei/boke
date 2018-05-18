@@ -1,11 +1,11 @@
 <template>
   <div class="wrap">
-        <router-link to="/Note">
-      <div class="wrap-1">
-          <img src="../assets/3.png" alt="" class="wrap-2">
-          <button>HTML笔记</button>
-      </div>
-          </router-link>
+      <router-link to="/Note">
+        <div class="wrap-1">
+            <img src="../assets/3.png" alt="" class="wrap-2">
+            <button>HTML笔记</button>
+        </div>
+      </router-link>
       <div class="wrap-1">
           <img src="../assets/4.png" alt="" class="wrap-3 wrap-2">
           <button>学会创建仓库</button>

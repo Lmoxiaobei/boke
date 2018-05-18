@@ -1,68 +1,66 @@
 <template>
   <div class="wrap">
-      <div class="wrap-1"></div>
-      <div class="zero">
-        <div class="wrap-2">
-          <div class="wrap-3"></div>
-          <div class="wrap-4"></div>
-        </div>
-        <div class="wrap-5">
-          <div class="wrap-6"></div>
-          <div class="wrap-7"></div>
-        </div>
+    <div class="wrap-1"></div>
+    <div class="zero">
+      <div class="wrap-2">
+        <div class="wrap-3"></div>
+        <div class="wrap-4"></div>
       </div>
-      <div class="zero-1">
-        <div class="wrap-10"></div>
-        <div class="wrap-8">
-          <img src="../assets/i394.png" alt="">
-          <router-link to='/Jianli'>
-          <span>我的简历</span>
+      <div class="wrap-5">
+        <div class="wrap-6"></div>
+        <div class="wrap-7"></div>
+      </div>
+    </div>
+    <div class="zero-1">
+      <div class="wrap-10"></div>
+      <div class="wrap-8">
+        <img src="../assets/i394.png" alt="">
+        <router-link to='/Jianli'>
+        <span>我的简历</span>
+        </router-link>
+      </div>
+      <div class="wrap-11"></div>
+      <div class="wrap-9">
+        <img src="../assets/i478.png" alt="">
+        
+        <span>我的博客</span>
+        
+      </div>
+    </div>
+
+
+
+
+  <div class="wrap-1 zero-2"></div>
+    <div class="zero">
+      <div class="wrap-2">
+        <div class="wrap-3"></div>
+        <div class="wrap-4"></div>
+      </div>
+      <div class="wrap-5">
+        <div class="wrap-6"></div>
+        <div class="wrap-7"></div>
+      </div>
+    </div>
+    <div class="zero-1">
+      <div class="wrap-10"></div>
+      <div class="wrap-8">
+        <img src="../assets/i422.png" alt="">
+        <router-link to="/Home">
+        <span>我的笔记</span>
           </router-link>
-        </div>
-        <div class="wrap-11"></div>
-        <div class="wrap-9">
-          <img src="../assets/i478.png" alt="">
-          
-          <span>我的博客</span>
-         
-        </div>
       </div>
-
-
-
-
-    <div class="wrap-1 zero-2"></div>
-      <div class="zero">
-        <div class="wrap-2">
-          <div class="wrap-3"></div>
-          <div class="wrap-4"></div>
-        </div>
-        <div class="wrap-5">
-          <div class="wrap-6"></div>
-          <div class="wrap-7"></div>
-        </div>
+      <div class="wrap-11"></div>
+      <div class="wrap-9 wrap-12">
+        <img src="../assets/i476.png" alt="">
+          <router-link to="/Xiangce">
+        <span>相册</span>
+        </router-link>
       </div>
-      <div class="zero-1">
-        <div class="wrap-10"></div>
-        <div class="wrap-8">
-          <img src="../assets/i422.png" alt="">
-          <router-link to="/Home">
-          <span>我的笔记</span>
-           </router-link>
-        </div>
-        <div class="wrap-11"></div>
-        <div class="wrap-9 wrap-12">
-          <img src="../assets/i476.png" alt="">
-           <router-link to="/Xiangce">
-          <span>相册</span>
-          </router-link>
-        </div>
-      </div>
-
-      <div class="wrap-13">
-        <span>Stay Hungry Stay Foolish</span>
-      </div>
-
+    </div>
+    <div class="wrap-13">
+      <span>Stay Hungry Stay Foolish</span>
+    </div>
   </div>
 </template>
 

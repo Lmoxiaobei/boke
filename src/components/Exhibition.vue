@@ -3,7 +3,7 @@
       <div class="wrap-1">
           <span class="wrap-2">HTML基础</span>
       </div>
-     <div class="wrap-3">
+      <div class="wrap-3">
       <p>1.结构层 html</p>
       <p>2.表示层 css</p>
       <p>3.行为层 javascript(js)属于弱类行语言</p>

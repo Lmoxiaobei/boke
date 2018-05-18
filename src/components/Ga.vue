@@ -1,20 +1,20 @@
 <template>
-    <div class="wrap">
-        <div class="ga">
-            <div class="sidebar">
-                <ul>
-                    <li v-for="t in tocList" :key="t.id">
-                    <router-link :to="`/Jianli/${t.id}`">
-                        {{ t.text }}
-                    </router-link>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="main">
-            <GaContent />
-        </div> 
-    </div> 
+<div class="wrap">
+	<div class="ga">
+		<div class="sidebar">
+			<ul>
+				<li v-for="t in tocList" :key="t.id">
+				<router-link :to="`/Jianli/${t.id}`">
+						{{ t.text }}
+				</router-link>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="main">
+			<GaContent />
+	</div> 
+</div> 
 </template>
 
 <script>

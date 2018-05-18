@@ -1,22 +1,22 @@
 <template>
-  <div>
-    <div class="wrap-1">
-      <img src="../assets/1.jpg" alt=""> 
-      <router-link to="/" >
-        <span class="wrap-2">Lmoxiaobei</span>
-      </router-link>
-      <span>></span>
-      <span>我的博客</span>
-    </div>
-    <div class="wrap-4">
-        <div class="wrap-2">
-          <Sidebar />
-        </div>
-        <div class="wrap-3">
-          <Exhibition />
-        </div>
-    </div>
+<div>
+  <div class="wrap-1">
+    <img src="../assets/1.jpg" alt=""> 
+    <router-link to="/" >
+      <span class="wrap-2">Lmoxiaobei</span>
+    </router-link>
+    <span>></span>
+    <span>我的博客</span>
   </div>
+  <div class="wrap-4">
+      <div class="wrap-2">
+        <Sidebar />
+      </div>
+      <div class="wrap-3">
+        <Exhibition />
+      </div>
+  </div>
+</div>
 </template>
 
 <script>
