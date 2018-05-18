@@ -9,10 +9,10 @@ import Exhibitionw from '@/components/Exhibitionw'
 import tiaozhuan from '@/components/tiaozhuan'
 import tiaozhuanq from '@/components/tiaozhuanq'
 import tiaozhuanw from '@/components/tiaozhuanw'
-import Ga from '@/components/Ga'
 import Jianli from '@/components/Jianli'
 import Jianliq from '@/components/Jianliq'
 import Xiangce from '@/components/Xiangce'
+import Ga from '@/components/Ga'
 
 Vue.use(Router)
 
@@ -54,10 +54,13 @@ export default new Router({
             path: '/tiaozhuanw',
             component: tiaozhuanw
         },
-
         {
-            path: '/ga',
-            component: Ga
+            path: '/Jianli',
+            redirect: '/Jianli/life' //默认显示到页面上
+        },
+        {
+            path: '/Jianli/:id',
+            component: Jianli
         },
         {
             path: '/jianli',
@@ -70,6 +73,10 @@ export default new Router({
         {
             path: '/Xiangce',
             component: Xiangce
+        },
+        {
+            path: '/Ga',
+            component: Ga
         },
 
     ],

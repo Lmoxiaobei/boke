@@ -21,7 +21,6 @@ export default {
 <style scoped>
 .wrap {
   width: 400px;
-  /* height: 420px; */
   background: rgba(83, 166, 174, 1);
   display: flex;
   justify-content: center;
@@ -35,7 +34,6 @@ export default {
   font-size: 18px;
 }
 a {
-  /* line-height: 20px; */
   margin-top: 56px;
   margin-bottom: 56px;
   color: #000;

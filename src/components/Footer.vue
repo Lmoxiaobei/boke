@@ -19,7 +19,6 @@ export default {
   align-items: center;
 }
 .wrap span {
-  /* width: 297px; */
   height: 22px;
   font-size: 16px;
   font-family: PingFangSC-Regular;

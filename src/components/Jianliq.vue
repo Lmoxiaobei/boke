@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="zero">
 <div class="wrap1">
   <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 80 1700 800">/
 
@@ -24,27 +24,41 @@
 <script>
 // import {jianliz} from "../constants/Jianliz.js";
 export default {
-  name: 'Jianliq',
+  name: 'Jianliq'
 }
 </script>
 
 <style scoped>
-$base: #A2A1A1;
-$text: #9CA2B7;
+$base: #a2a1a1;
+$text: #9ca2b7;
 
 body {
   font-family: 'Oswald', Arial;
   color: $text;
-  background: linear-gradient(to right, #0D123E 0%, rgba(38, 41, 70, 0.98$base: #a2a1a1;
-$text: #9ca2b7;
-
-body {
-  font-family: "Oswald", Arial;
-  color: $text;
   background: linear-gradient(
     to right,
     #0d123e 0%,
-    rgba(38, 41, 70, 0.98) 72%,
+    rgba(
+        38,
+        41,
+        70,
+        0.98$base: #a2a1a1; $text: #9ca2b7; body {font-family: 'Oswald',
+        Arial; color: $text; background:
+          linear-gradient(
+            to right,
+            #0d123e 0%,
+            rgba(38, 41, 70, 0.98) 72%,
+            #090821 100%
+          )
+          ; font-size: 32px;} #svg {width: 100%;} .st0 {stroke: $base; opacity:
+          0.1;} #huge {fill: mix($base, #fff, 90%) ;} #standard {fill:
+          mix($base, #fff, 40%) ;} #tiny {fill: mix($base, #fff, 20%) ;} #smallish
+          {fill: mix($base, #fff, 90%) ;} #small {fill: mix($base, #fff, 60%) ;}
+          #smaller {fill: mix($base, #fff, 10%) ;} #tiniest {fill:
+          mix($base, #fff, 30%) ;} * {box-sizing: border-box;} .wrap1 {width:
+          60%; float: left;} .wrap2 {width: 40%; float: left;}
+      )
+      72%,
     #090821 100%
   );
   font-size: 32px;
@@ -93,66 +107,12 @@ body {
 
 .wrap1 {
   width: 60%;
-  float: left;
+  /* float: left; */
 }
 
 .wrap2 {
-  width: 40%;
-  float: left;
-}
-) 72%, #090821 100%);
-  font-size: 32px;
-}
-
-#svg {
-  width: 100%;
-}
-
-.st0 {
-  stroke: $base;
-  opacity: 0.1;
-}
-
-#huge {
-    fill: mix($base, #fff, 90%);
-}
-
-#standard {
-  fill: mix($base, #fff, 40%);
-}
-
-#tiny {
-  fill: mix($base, #fff, 20%);
-}
-
-#smallish {
-  fill: mix($base, #fff, 90%);
-}
-
-#small {
-  fill: mix($base, #fff, 60%);
-}
-
-#smaller {
-  fill: mix($base, #fff, 10%);
-}
-
-#tiniest {
-  fill: mix($base, #fff, 30%);
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.wrap1 {
-  width: 60%;
-  float: left;
-}
-
-.wrap2 {
-  width: 40%;
-  float: left;
+  width: 30%;
+  /* float: left; */
 }
 
 * {
@@ -167,99 +127,357 @@ body {
 }
 .equalizer {
   -webkit-animation: equalize 2s infinite;
-          animation: equalize 2s infinite;
-  background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,linear-gradient(0deg, #111, #111) -20px -57px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 0px -63px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 20px -81px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 40px -80px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 60px -43px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 80px -26px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
+  animation: equalize 2s infinite;
+  background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,
+    linear-gradient(0deg, #111, #111) -20px -57px / 20px 100px,
+    linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,
+    linear-gradient(0deg, #111, #111) 0px -63px / 20px 100px,
+    linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,
+    linear-gradient(0deg, #111, #111) 20px -81px / 20px 100px,
+    linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,
+    linear-gradient(0deg, #111, #111) 40px -80px / 20px 100px,
+    linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,
+    linear-gradient(0deg, #111, #111) 60px -43px / 20px 100px,
+    linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,
+    linear-gradient(0deg, #111, #111) 80px -26px / 20px 100px,
+    linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
   background-repeat: no-repeat;
   height: 100px;
   width: 100px;
 }
 @-webkit-keyframes equalize {
-  0%, 100% {
-    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,linear-gradient(0deg, #111, #111) -20px -87px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 0px -72px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 20px -77px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 40px -59px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 60px -36px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 80px -72px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
+  0%,
+  100% {
+    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) -20px -87px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 0px -72px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 20px -77px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 40px -59px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 60px -36px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 80px -72px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
     background-repeat: no-repeat;
   }
   10% {
-    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,linear-gradient(0deg, #111, #111) -20px -76px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 0px -31px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 20px -24px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 40px -62px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 60px -63px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 80px -45px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
+    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) -20px -76px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 0px -31px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 20px -24px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 40px -62px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 60px -63px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 80px -45px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
     background-repeat: no-repeat;
   }
   20% {
-    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,linear-gradient(0deg, #111, #111) -20px -52px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 0px -79px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 20px -89px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 40px -28px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 60px -56px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 80px -100px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
+    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) -20px -52px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 0px -79px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 20px -89px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 40px -28px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 60px -56px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 80px -100px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
     background-repeat: no-repeat;
   }
   30% {
-    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,linear-gradient(0deg, #111, #111) -20px -39px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 0px -54px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 20px -81px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 40px -49px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 60px -46px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 80px -68px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
+    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) -20px -39px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 0px -54px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 20px -81px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 40px -49px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 60px -46px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 80px -68px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
     background-repeat: no-repeat;
   }
   40% {
-    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,linear-gradient(0deg, #111, #111) -20px -66px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 0px -47px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 20px -32px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 40px -82px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 60px -23px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 80px -35px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
+    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) -20px -66px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 0px -47px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 20px -32px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 40px -82px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 60px -23px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 80px -35px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
     background-repeat: no-repeat;
   }
   50% {
-    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,linear-gradient(0deg, #111, #111) -20px -84px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 0px -58px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 20px -31px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 40px -93px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 60px -26px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 80px -38px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
+    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) -20px -84px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 0px -58px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 20px -31px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 40px -93px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 60px -26px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 80px -38px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
     background-repeat: no-repeat;
   }
   60% {
-    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,linear-gradient(0deg, #111, #111) -20px -81px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 0px -57px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 20px -57px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 40px -28px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 60px -60px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 80px -98px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
+    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) -20px -81px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 0px -57px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 20px -57px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 40px -28px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 60px -60px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 80px -98px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
     background-repeat: no-repeat;
   }
   70% {
-    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,linear-gradient(0deg, #111, #111) -20px -26px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 0px -50px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 20px -77px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 40px -65px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 60px -35px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 80px -37px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
+    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) -20px -26px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 0px -50px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 20px -77px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 40px -65px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 60px -35px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 80px -37px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
     background-repeat: no-repeat;
   }
   80% {
-    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,linear-gradient(0deg, #111, #111) -20px -96px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 0px -73px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 20px -96px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 40px -53px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 60px -26px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 80px -23px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
+    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) -20px -96px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 0px -73px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 20px -96px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 40px -53px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 60px -26px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 80px -23px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
     background-repeat: no-repeat;
   }
   90% {
-    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,linear-gradient(0deg, #111, #111) -20px -65px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 0px -62px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 20px -67px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 40px -23px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 60px -86px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 80px -95px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
+    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) -20px -65px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 0px -62px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 20px -67px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 40px -23px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 60px -86px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 80px -95px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
     background-repeat: no-repeat;
   }
 }
 @keyframes equalize {
-  0%, 100% {
-    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,linear-gradient(0deg, #111, #111) -20px -87px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 0px -72px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 20px -77px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 40px -59px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 60px -36px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 80px -72px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
+  0%,
+  100% {
+    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) -20px -87px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 0px -72px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 20px -77px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 40px -59px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 60px -36px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 80px -72px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
     background-repeat: no-repeat;
   }
   10% {
-    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,linear-gradient(0deg, #111, #111) -20px -76px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 0px -31px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 20px -24px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 40px -62px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 60px -63px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 80px -45px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
+    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) -20px -76px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 0px -31px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 20px -24px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 40px -62px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 60px -63px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 80px -45px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
     background-repeat: no-repeat;
   }
   20% {
-    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,linear-gradient(0deg, #111, #111) -20px -52px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 0px -79px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 20px -89px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 40px -28px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 60px -56px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 80px -100px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
+    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) -20px -52px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 0px -79px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 20px -89px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 40px -28px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 60px -56px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 80px -100px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
     background-repeat: no-repeat;
   }
   30% {
-    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,linear-gradient(0deg, #111, #111) -20px -39px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 0px -54px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 20px -81px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 40px -49px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 60px -46px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 80px -68px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
+    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) -20px -39px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 0px -54px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 20px -81px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 40px -49px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 60px -46px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 80px -68px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
     background-repeat: no-repeat;
   }
   40% {
-    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,linear-gradient(0deg, #111, #111) -20px -66px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 0px -47px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 20px -32px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 40px -82px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 60px -23px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 80px -35px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
+    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) -20px -66px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 0px -47px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 20px -32px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 40px -82px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 60px -23px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 80px -35px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
     background-repeat: no-repeat;
   }
   50% {
-    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,linear-gradient(0deg, #111, #111) -20px -84px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 0px -58px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 20px -31px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 40px -93px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 60px -26px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 80px -38px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
+    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) -20px -84px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 0px -58px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 20px -31px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 40px -93px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 60px -26px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 80px -38px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
     background-repeat: no-repeat;
   }
   60% {
-    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,linear-gradient(0deg, #111, #111) -20px -81px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 0px -57px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 20px -57px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 40px -28px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 60px -60px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 80px -98px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
+    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) -20px -81px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 0px -57px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 20px -57px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 40px -28px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 60px -60px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 80px -98px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
     background-repeat: no-repeat;
   }
   70% {
-    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,linear-gradient(0deg, #111, #111) -20px -26px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 0px -50px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 20px -77px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 40px -65px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 60px -35px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 80px -37px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
+    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) -20px -26px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 0px -50px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 20px -77px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 40px -65px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 60px -35px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 80px -37px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
     background-repeat: no-repeat;
   }
   80% {
-    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,linear-gradient(0deg, #111, #111) -20px -96px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 0px -73px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 20px -96px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 40px -53px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 60px -26px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 80px -23px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
+    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) -20px -96px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 0px -73px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 20px -96px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 40px -53px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 60px -26px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 80px -23px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
     background-repeat: no-repeat;
   }
   90% {
-    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,linear-gradient(0deg, #111, #111) -20px -65px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 0px -62px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 20px -67px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 40px -23px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 60px -86px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,linear-gradient(0deg, #111, #111) 80px -95px / 20px 100px,linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
+    background: linear-gradient(0deg, #008000, #ff0, #f00) -38px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) -20px -65px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) -18px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 0px -62px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 2px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 20px -67px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 22px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 40px -23px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 42px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 60px -86px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 62px 0 / 16px 100px,
+      linear-gradient(0deg, #111, #111) 80px -95px / 20px 100px,
+      linear-gradient(0deg, #008000, #ff0, #f00) 82px 0 / 16px 100px;
     background-repeat: no-repeat;
   }
 }
-.jianliq{
-    position:relative;
-    left:90%;
-    top:0px;
+.jianliq {
+  /* position: relative;
+  left: 90%;
+  top: 0px; */
+}
+.zero {
+  display: flex;
+  justify-content: center;
 }
 </style>

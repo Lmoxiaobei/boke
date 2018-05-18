@@ -1,13 +1,13 @@
 <template>
 <div>
-    <div class="wrap-1">
+  <div class="wrap-1">
       <img src="../assets/1.jpg" alt=""> 
       <router-link to="/">
       <span class="wrap-2">Lmoxiaobei</span>
       </router-link>
       <span>></span>
       <span>我的简历</span>
-    </div>
+  </div>
   <div class="clock">
     <div class="top"></div>
     <div class="right"></div>
@@ -20,16 +20,20 @@
     <div class="second"></div>
   </div>    
   <Jianliq />
+  <Ga />
 </div>  
 </template>
 
 <script>
 import Jianliq from './Jianliq'
+import Ga from './Ga'
+
 export default {
   name: 'Jianli',
   components: {
-    Jianliq
-  },
+    Jianliq,
+    Ga
+  }
 }
 </script>
 
@@ -38,6 +42,9 @@ export default {
   margin: 0;
   padding: 0;
   border: 0;
+}
+li {
+  list-style: none;
 }
 body {
   min-height: 100%;
