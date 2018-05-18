@@ -34,4 +34,25 @@ export default {
 </script>
 
 <style scoped>
+li {
+  list-style: none;
+}
+.wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.ga {
+  background: rgba(83, 166, 174, 1);
+  width: 40%;
+}
+.main {
+  background: -webkit-gradient(
+    linear,
+    0 0,
+    0 bottom,
+    from(rgb(68, 142, 246)),
+    to(rgb(117, 194, 246))
+  );
+  width: 60%;
+}
 </style>
