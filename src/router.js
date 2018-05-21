@@ -13,6 +13,9 @@ import Jianli from '@/components/Jianli'
 import Jianliq from '@/components/Jianliq'
 import Xiangce from '@/components/Xiangce'
 import Ga from '@/components/Ga'
+import Noteq from '@/components/Noteq'
+import Noted from '@/components/Noted'
+import Noter from '@/components/Noter'
 
 Vue.use(Router)
 
@@ -25,10 +28,6 @@ export default new Router({
         {
             path: '/Home',
             component: Home
-        },
-        {
-            path: '/Note',
-            component: Note
         },
         {
             path: '/Exhibitionq',
@@ -78,7 +77,26 @@ export default new Router({
             path: '/Ga',
             component: Ga
         },
-
+        {
+            path: '/Note',
+            redirect: '/Note/life' //默认显示到页面上
+        },
+        {
+            path: '/Note/:id',
+            component: Note
+        },
+        {
+            path: '/Noteq',
+            component: Noteq
+        },
+        {
+            path: '/Noted',
+            component: Noted
+        },
+        {
+            path: '/Noter',
+            component: Noter
+        },
     ],
     mode: 'history' //去除网页链接上面的#
 })

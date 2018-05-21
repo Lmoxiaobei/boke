@@ -22,7 +22,7 @@
 </template>
 
 <script>
-// import {jianliz} from "../constants/Jianliz.js";
+// import jianliz from '../constants/Jianliz.js'
 export default {
   name: 'Jianliq'
 }

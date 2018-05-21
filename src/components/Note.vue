@@ -8,25 +8,28 @@
     <span>></span>
     <span>我的博客</span>
   </div>
-  <div class="wrap-4">
+  <!-- <div class="wrap-4">
       <div class="wrap-2">
         <Sidebar />
       </div>
       <div class="wrap-3">
         <Exhibition />
       </div>
-  </div>
+  </div> -->
+  <Noted />
 </div>
 </template>
 
 <script>
-import Sidebar from './Sidebar'
-import Exhibition from './Exhibition'
+// import Sidebar from './Sidebar'
+// import Exhibition from './Exhibition'
+import Noted from './Noted'
 export default {
   name: 'Note',
   components: {
-    Sidebar,
-    Exhibition
+    //   Sidebar,
+    //   Exhibition,
+    Noted
   }
 }
 </script>
