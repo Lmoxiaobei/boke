@@ -45,7 +45,7 @@ li {
   background: rgba(83, 166, 174, 1);
   width: 40%;
 }
-.main {
+/* .main {
   background: -webkit-gradient(
     linear,
     0 0,
@@ -53,6 +53,9 @@ li {
     from(rgb(68, 142, 246)),
     to(rgb(117, 194, 246))
   );
+  width: 60%;
+} */
+.main {
   width: 60%;
 }
 </style>
