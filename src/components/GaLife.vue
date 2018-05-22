@@ -5,7 +5,7 @@
       <div v-masonry-tile :key="index" class="item" v-for="(item, index) in blocks">
           <!-- <img :src="`/img/dog${item.id}.jpg`" /> -->
           <!-- <img :src="`../assets/dog${item.id}.jpg`" alt=""> -->
-          <img src="../../public/img/dog1.jpg" alt="">
+          <img src="../assets/2.jpg" alt="">
       </div>
     </div>
   </div>
